@@ -1,0 +1,33 @@
+{
+    "keyboard_name": "u_mama_macro", 
+    "url": "girls.com", 
+    "maintainer": "u mama", 
+    "layouts": {
+        "LAYOUT_horizontal": {
+            "layout": [
+                {"label":"1", "x":0, "y":0},
+                {"label":"2", "x":1, "y":0},
+                {"label":"3", "x":2, "y":0},
+                {"label":"4", "x":3, "y":0},
+                {"label":"5", "x":4, "y":0},
+                {"label":"6", "x":5, "y":0},
+                {"label":"7", "x":6, "y":0},
+                {"label":"8", "x":7, "y":0},
+                {"label":"9", "x":8, "y":0}
+            ]
+        }
+    },
+    "layers": [
+        [
+            "KC_F13",
+            "KC_F14",
+            "KC_F15",
+            "KC_F16",
+            "KC_F17",
+            "KC_F18",
+            "KC_F19",
+            "KC_F20",
+            "KC_F21"
+        ]
+    ]
+}

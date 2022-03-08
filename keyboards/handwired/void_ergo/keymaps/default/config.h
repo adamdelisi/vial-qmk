@@ -19,5 +19,6 @@
 // place overrides here
 
 #define USE_SERIAL
-// #define MASTER_LEFT
+//#define MASTER_LEFT
 #define SPLIT_USB_DETECT
+#define VIAL_KEYBOARD_UID {0x7F, 0x8D, 0x97, 0x06, 0xB4, 0xA4, 0x0D, 0xFA}

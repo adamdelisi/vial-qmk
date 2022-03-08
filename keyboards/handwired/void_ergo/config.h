@@ -30,7 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 12
 
-
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
 
@@ -38,11 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEBOUNCE 5
 
 /* disable these deprecated features by default */
-#define USE_SERIAL
-#define SOFT_SERIAL_PIN D1
-
-//#define MASTER_LEFT
-#define SPLIT_USB_DETECT
 #define VIAL_KEYBOARD_UID {0x7F, 0x8D, 0x97, 0x06, 0xB4, 0xA4, 0x0D, 0xFA}
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 2 }
 #define VIAL_UNLOCK_COMBO_COLS { 0, 1 }

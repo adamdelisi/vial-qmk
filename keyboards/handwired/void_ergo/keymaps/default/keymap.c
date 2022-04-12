@@ -18,6 +18,7 @@
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
   _QWERTY,
+_COLEMAK,
   _RAISE,
   _LOWER,
   _MEDIA,
@@ -68,6 +69,9 @@ enum layer_names {
 #define HORZ LSFT(KC_C)
 #define VERT LSFT(KC_M)
 
+#define _QWERTY 0
+#define _COLEMAK 1
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* OWERTY
@@ -85,7 +89,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,      KC_Q,     KC_W,      KC_E,       KC_R,     KC_T,                    KC_Y,       KC_U,     KC_I,       KC_O,     KC_P,       KC_BSPC,
     KC_TAB,     KC_A,     KC_S,      KC_D,       KC_F,     KC_G,                     KC_H,       KC_J,     KC_K,       KC_L,     KC_SCLN,    KC_ENT,
     KC_LALT,     KC_Z,     KC_X,      KC_C,        KC_V,      KC_B,                  KC_N,       KC_M,     KC_COMM,    KC_DOT,   KC_SLSH,    KC_QUOTE,
-                KC_HYPR,  KC_SPC,  MO(_LOWER), KC_LCTL,   KC_LSFT,                  KC_LGUI,   KC_SPC,   MO(_RAISE),  MO(_ADJUST),  MO(_MEDIA)
+                KC_HYPR,  KC_SPC,  MO(_LOWER), KC_LCTL,   KC_LSFT,                   KC_LGUI,   KC_SPC,   MO(_RAISE),   TG(1),  MO(_MEDIA)
+),
+
+[_COLEMAK] = LAYOUT_void_ergo(
+    KC_ESC,     KC_Q,     KC_W,      KC_F,       KC_P,     KC_B,                    KC_J,       KC_L,     KC_U,       KC_Y,     KC_SCLN,       KC_BSPC,
+    KC_TAB,     KC_A,     KC_R,      KC_S,       KC_T,     KC_G,                    KC_M,       KC_N,     KC_E,       KC_I,     KC_O,    KC_ENT,
+    KC_LALT,    KC_Z,     KC_X,      KC_C,       KC_D,      KC_V,                 KC_K,       KC_H,     KC_COMM,    KC_DOT,   KC_SLSH,    KC_QUOTE,
+                KC_HYPR,  KC_SPC,  MO(_LOWER), KC_LCTL,   KC_LSFT,                  KC_LGUI,   KC_SPC,   MO(_RAISE),  TG(1),  MO(_MEDIA)
 ),
 
 [_LOWER] = LAYOUT_void_ergo(

@@ -39,10 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENCODERS_PAD_A { F5 }
 #define ENCODERS_PAD_B { F6 }
 
-#define ENCODERS_PAD_A_RIGHT { F5 }
-#define ENCODERS_PAD_B_RIGHT { F6 }
-
-#define ENCODER_DIRECTION_FLIP
+// #define ENCODER_DIRECTION_FLIP
 
 /* Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN. */
 #define USE_SERIAL

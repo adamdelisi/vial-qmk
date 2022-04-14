@@ -14,23 +14,19 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "void_ergo.h"
+#pragma once
 
-// Optional override functions below.
-// You can leave any or all of these undefined.
-// These are only required if you want to perform custom actions.
+// place overrides here
 
-void matrix_init_kb(void) {
-    // put your keyboard start-up code here
-    // runs once when the firmware starts up
+#define USE_SERIAL
+// #define MASTER_LEFT
+#define SPLIT_USB_DETECT
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+#undef TAPPING_TERM
+#define TAPPING_TERM 240
+#define RETRO_TAPPING
 
-    // disable pro micro LEDs
-    DDRD &= ~(1<<5);
-    PORTD &= ~(1<<5);
 
-    DDRB &= ~(1<<0);
-    PORTB &= ~(1<<0);
-
-    matrix_init_user();
-}
-
+#define ENCODERS_PAD_A { F5 }
+#define ENCODERS_PAD_B { F6 }

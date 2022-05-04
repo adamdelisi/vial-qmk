@@ -41,10 +41,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
   ),
 };
-
-enum {
-  TD_Q_TAB = 0
-};
-qk_tap_dance_action_t tap_dance_actions[] = {
-  [TD_Q_TAB] = ACTION_TAP_DANCE_DOUBLE(KC_Q, KC_TAB)
-};

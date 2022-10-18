@@ -21,29 +21,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define PRODUCT VOID ERGO SLIM
 
-
-/* USB Device descriptor parameter */
-#define VENDOR_ID 0xF055
-#define PRODUCT_ID 0x3535
-#define DEVICE_VER 0x0001
-#define MANUFACTURER Victor Lucachi
-#define DESCRIPTION A handwired split keyboard inspired by the Corne
-
-/* key matrix size */
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 12
-
+/*
+ * Keyboard Matrix Assignments
+ *
+ * Change this to how you wired your keyboard
+ * COLS: AVR pins used for columns, left to right
+ * ROWS: AVR pins used for rows, top to bottom
+ * DIODE_DIRECTION: COL2ROW = COL = Anode (+), ROW = Cathode (-, marked on diode)
+ *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
+ *
+ */
 #define MATRIX_ROW_PINS { B1, B3, B2, B6 }
 #define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
 #define UNUSED_PINS
 
-/* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
+/* Encoder pins */
+#define ENCODERS_PAD_A { F5 }
+#define ENCODERS_PAD_B { F6 }
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
-/* disable these deprecated features by default */
+// #define ENCODER_DIRECTION_FLIP
 
+/* Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN. */
 #define USE_SERIAL
-#define SOFT_SERIAL_PIN D1
+#define SOFT_SERIAL_PIN D1  // or D1, D2, D3, E6
 #define SELECT_SOFT_SERIAL_SPEED 0
+

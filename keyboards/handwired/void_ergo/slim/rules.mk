@@ -10,4 +10,5 @@ MCU = atmega32u4
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
 BOOTLOADER = caterina
-ENCODER_ENABLE = yes
+ENCODER_ENABLE = no
+SPLIT_KEYBOARD = yes

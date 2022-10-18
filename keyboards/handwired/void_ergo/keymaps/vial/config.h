@@ -15,9 +15,12 @@
  */
 
 #pragma once
+#define VIAL_KEYBOARD_UID {0x10, 0xB2, 0x08, 0xB5, 0x07, 0x2A, 0x8D, 0x7B}
 
 // place overrides here
 
-#define USE_SERIAL
-// #define MASTER_LEFT
-#define SPLIT_USB_DETECT
+#define DYNAMIC_KEYMAP_LAYER_COUNT 4
+#define VIAL_COMBO_ENTRIES 3
+#define VIAL_KEY_OVERRIDE_ENTRIES 3
+#define VIAL_TAP_DANCE_ENTRIES 3
+

@@ -17,8 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
-
 #define PRODUCT VOID ERGO SLIM
 
 
@@ -33,12 +31,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 12
 
+/* COL2ROW, ROW2COL*/
+#define DIODE_DIRECTION COL2ROW
+
 #define MATRIX_ROW_PINS { B1, B3, B2, B6 }
 #define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
 #define UNUSED_PINS
-
-/* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
@@ -47,3 +45,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL
 #define SOFT_SERIAL_PIN D1
 #define SELECT_SOFT_SERIAL_SPEED 0
+#define SPLIT_USB_DETECT

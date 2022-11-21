@@ -6,9 +6,10 @@ COMMAND_ENABLE = no        # Commands for debug and configuration
 NKRO_ENABLE = yes            # USB Nkey Rollover
 
 # reviung34_rgb
-RGBLIGHT_ENABLE = yes
+RGBLIGHT_ENABLE = no
 
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
-QMK_SETTINGS = no
+QMK_SETTINGS = yes
 COMBO_ENABLE = no
+MIDI_ENABLE = no

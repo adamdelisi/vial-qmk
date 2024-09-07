@@ -16,9 +16,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
-
 #define USE_SERIAL
-
+#define MASTER_LEFT
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 1000
 #define EE_HANDS
+#define SOFT_SERIAL_PIN D0
 
 #define KINETIC_SPEED
